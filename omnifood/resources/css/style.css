@@ -197,3 +197,51 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
+
+/* -------------------------------------------*/
+/* Features */
+/* -------------------------------------------*/
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+
+/* -------------------------------------------*/
+/* MEALS */
+/* -------------------------------------------*/
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden; /* keeps the image inside the container */
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7; /* opacity + background color black from .meal-photo makes the image darker */
+  width: 100%;
+  height: auto;
+  transform: scale(1.15); /* makes the image 115% bigger */
+  transition: transform 0.3s, opacity 0.5s; /* animation to make the image bigger and darker */
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
