@@ -7,7 +7,7 @@ orange color: #e67e22
 /* -------------------------------------------*/
 
 * {
-  /*margin: 0;*/
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -20,6 +20,16 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
+
+.clearfix { zoom: 1 }
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 
 
 /* -------------------------------------------*/
@@ -100,7 +110,36 @@ h2:after {
   margin-bottom: 10px;
 }
 
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
 
+  /* secrets to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+/* --------- LINKS --------*/
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
 
 /* --------- BUTTONS --------*/
 .btn:link, /* :link indicates an 'a' element in a normal state */
@@ -252,6 +291,9 @@ header {
 /* -------------------------------------------*/
 
 
+.section-steps {
+  background-color: #f4f4f4;
+}
 
 .steps-box:first-child {
   text-align: right; /* text-align works not only for texts, but for all inline and inline-block elements */
@@ -261,7 +303,7 @@ header {
 
 .steps-box:last-child {
   padding-left: 3%;
-  margin-top: 70px;;
+  margin-top: 70px;
 }
 
 .app-screen {
@@ -290,8 +332,28 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+
+/* -------------------------------------------*/
+/* CITIES */
+/* -------------------------------------------*/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
 }
